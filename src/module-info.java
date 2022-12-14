@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author nithe
+ *
+ */
+module sample {
+}
