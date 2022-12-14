@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
                 echo 'Hello world'
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '4d177004-3a5c-486c-8282-e339d95c902f', url: 'https://github.com/nitheesh-1612/java_project.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '4d177004-3a5c-486c-8282-e339d95c902f', url: 'https://github.com/nitheesh-1612/java_test.git']]])
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
       
